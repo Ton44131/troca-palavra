@@ -1,0 +1,108 @@
+/* Definindo uma paleta de cores inspirada no universo Pokémon */
+:root {
+    --cor-fundo: #f1f1f1;
+    --cor-principal: #ffcb05; /* Amarelo Pokémon */
+    --cor-secundaria: #3b4cca; /* Azul Pokémon */
+    --cor-texto: #000000;
+    --cor-botao: #ff4757; /* Vermelho de Pokébola */
+    --cor-botao-hover: #ff6b81;
+    --cor-borda: #2f2f2f;
+}
+
+/* Corpo e fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Título principal */
+h1 {
+    color: var(--cor-secundaria);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Pokémon Solid', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Imagem do Pokémon */
+.pokemon-img {
+    width: 40px;
+    height: auto;
+}
+
+/* Caixa de palavras */
+#caixaPalavras {
+    background-color: var(--cor-principal);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+#caixaPalavras p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Imagem de Pokémon nas frases */
+#caixaPalavras p img {
+    width: 25px;
+    height: auto;
+}
+
+/* Input de texto */
+#palavra {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 300px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#palavra:focus {
+    outline: none;
+    border-color: var(--cor-secundaria);
+}
+
+/* Botão */
+button {
+    background-color: var(--cor-botao);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/* Barra de separação */
+hr {
+    border: 0;
+    border-top: 2px solid var(--cor-secundaria);
+    margin: 40px 0;
+}
+
+/* Estilo para parágrafos com a palavra 'LEGO' */
+strong {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
