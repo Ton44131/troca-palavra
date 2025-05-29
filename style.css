@@ -9,15 +9,52 @@
     --cor-borda: #2f2f2f;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* Corpo e fundo */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--cor-fundo);
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(to bottom, #d0f0ff, #ffffff);
     color: var(--cor-texto);
     text-align: center;
     padding: 50px 0;
 }
 
+body::before {
+    content: "";
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg');
+    background-size: 80px;
+    opacity: 0.03;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header {
+    background-color: #ffcb05;
+    color: #2a75bb;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.3rem;
+    text-shadow: 1px 1px 0 white;
+    letter-spacing: 2px;
+}
+
+main{
+    height: 100vh;
+}
 /* Título principal */
 h1 {
     color: var(--cor-secundaria);
@@ -105,4 +142,16 @@ hr {
 strong {
     color: var(--cor-secundaria);
     font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #2a75bb;
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
 }
